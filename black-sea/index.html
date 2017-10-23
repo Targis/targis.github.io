@@ -1,21 +1,21 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
 
 	<meta charset="utf-8">
-
-	<title>Title</title>
-	<meta name="description" content="">
+	<title>Play</title>
+	<meta name="description" content="Imagine playing a quick casual game with a friend.">
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-	<meta property="og:image" content="path/to/image.jpg">
-	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
-	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+	<meta property="og:image" content="img/logo.png">
+	<link rel="shortcut icon" href="img/favicon/Play-Favicon-48x48px.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/Play-Favicon-48x48px.png">
+	<link rel="apple-touch-icon" sizes="16x16" href="img/favicon/Play-Favicon-32x32px.png">
+	<link rel="apple-touch-icon" sizes="32x32" href="img/favicon/Play-Favicon-32x32px.png">
+	<link rel="apple-touch-icon" sizes="48x48" href="img/favicon/Play-Favicon-48x48px.png">
 
 	<!-- Chrome, Firefox OS and Opera -->
 	<meta name="theme-color" content="#000">
@@ -24,140 +24,47 @@
 	<!-- iOS Safari -->
 	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
 
+	<link href="https://fonts.googleapis.com/css?family=Nunito:700,800" rel="stylesheet"> 
+
+	<link rel="stylesheet" href="style.css">
+
+
 </head>
 
 <body>
-
-	<header class="header">
-
-		<div class="top-line">
-
-			<div class="container">
-
-				<span class="logo"><a href="#">Black Sea</a></span>
-
-				<nav class="nav">
-					<ul>
-						<li><a href="#">Home</a></li>
-						<li><a href="#">About me</a></li>
-						<li><a href="#">Portfolio</a></li>
-						<li><a href="#">Contact me</a></li>
-					</ul>
-				</nav>
-
-				<div class="mobile-menu-wrapper">
-					<button class="toggle-menu">
-						<span class="sandwich">
-							<span class="s-topper"></span>
-							<span class="s-middle"></span>
-							<span class="s-bottom"></span>
-						</span>
-					</button>
-					<ul class="mobile-menu">
-						<li><a href="#">Home</a></li>
-						<li><a href="#">About me</a></li>
-						<li><a href="#">Portfolio</a></li>
-						<li><a href="#">Contact me</a></li>
-					</ul>
-				</div>
-				
+	<div id="main" class="main">
+		<header class="main-header">
+			<div class="logo">
+				<img src="img/logo.svg" onerror="this.src='img/logo.png'" alt="Logo">
 			</div>
-
-		</div>
-
-		<ul class="slides">
-			<li>
-				<h1>We need the tonic of wildness</h1>
-				<div class="btn"><a href="#">Read more</a></div>
-			</li>
-			<li>
-				<h1>We need the tonic of expanse</h1>
-				<div class="btn"><a href="#">Read more</a></div>
-			</li>
-			<li>
-				<h1>We need the tonic of hinterland</h1>
-				<div class="btn"><a href="#">Read more</a></div>
-			</li>
-			<li>
-				<h1>We need the tonic of wildness</h1>
-				<div class="btn"><a href="#">Read more</a></div>
-			</li>
-			<li>
-				<h1>We need the tonic of freshness</h1>
-				<div class="btn"><a href="#">Read more</a></div>
-			</li>
-		</ul>
-
-	</header>
-
-	<section class="things">
-		<h2>At the same time that we are earnest to explore & learn all things</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur nostrum porro tempore maxime harum inventore. Quaerat expedita sint ullam, accusantium.</p>
-		<div class="things-img"><img src="/img/earnest.png" alt=""></div>
-		<div class="things-img"><img src="/img/explore.png" alt=""></div>
-		<div class="things-img"><img src="/img/learn.png" alt=""></div>
-
-	</section>
-
-	<section class="reviews">
-		
-		<ul class="reviews-slides">
-			<li>
-				<div class="review-left">
-					<img src="img/custumer-1.jpg" alt="custumer photo">
-				</div>
-				<div class="review-right">
-					<h3>Dhavan</h3>
-					<img src="img/quote.png" alt="quotes">
-				</div>
-				<p class="comment">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim sapiente consectetur amet ullam eum, et facere perferendis repellendus. Saepe animi ullam nostrum laboriosam accusamus ratione aperiam ipsam, nulla cupiditate totam distinctio dolorem, autem quo perferendis sunt facilis, veniam repudiandae atque nobis architecto voluptates. Minus, corporis totam sapiente vero dolor aperiam repellat minima laudantium in.</p>
-			</li>
-			<li></li>
-		</ul>
-
-	</section>
-
-	<section class="contact">
-		
-		<!-- Google map wrapper -->
-		<div id="map"></div>
-
-		<div class="contact-form">
-			<form action="#">
-				<input type="text" value="Name" onfocus="if(this.value == 'Name') this.value='';" onblur="if(this.value == '') this.value='Name';" name="name">
-				<input type="email" value="Email" onfocus="if(this.value == 'Email') this.value='';" onblur="if(this.value == '') this.value='Email';" name="email">
-				<textarea onfocus="if(this.value == 'Message') this.value='';" onblur="if(this.value == '') this.value='Message';">Message</textarea>
-				<br>
-				<div class="btn-submit">
-					<input type="submit" value="" name="submit">
-				</div>
-			</form>
-		</div>
-
-	</section>
-
-	<footer class="footer">
-		
-		<span>Copyright © 2015 <a href="#">Author</a></span>
-
-	</footer>
+			<h1>Play</h1>
+		</header>
 	
-	<link rel="stylesheet" href="css/main.min.css">
-	<script src="js/scripts.min.js"></script>
-	<script>
-		var map;
-		function initMap() {
-			map = new google.maps.Map(document.getElementById('map'), {
-				center: {lat: 52.712, lng: -1.653},
-				zoom: 12,
-				scrollwheel: false
-			});
-		}
-	</script>
-	<script 
-		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyByRud8xtEsZrieOWqvDT8hr5euATEaxz0&callback=initMap" async defer>
-	</script>
+
+		
+
+		<div class="column-left">
+			<div class="content-left">
+				<p>Imagine playing a <br />quick casual game <br /> with a friend.</p>
+			</div>
+		</div>
+
+		<div class="column-right">
+
+				<a href="https://www.linkedin.com/in/linodsg/" class="content-right">
+					<div class="linkedin-logo">
+						<img src="img/linkedin.svg" onerror="this.src='img/linkedin.png'" alt="LinkedIn Logo">
+					</div>
+					<p>Are you a game, a sound, <br />an UI/UX designer? Are  <br />you adeveloper? 
+					Are you <br />a marketer? Are you an <br />investor? Say hi!</p>
+					
+				</a>
+
+		</div>
 
 
+	
+	</div>
+	
 </body>
 </html>
